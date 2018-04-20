@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-oauth-google",
+  "version": "1.0.0",
+  "description": "An OAuth application written in node.js",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danial Dabirian",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
