@@ -1,3 +1,6 @@
+# Ignore keys.js
+keys.js
+
 # Ignore node_modules
 node_modules/
 

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navbar a {
+    margin-right: 20px;
+}
+
+.home-header {
+    margin-top: 20px;
+}
+
+.login-header {
+    margin-top: 20px;
+}
+
+.google-button {
+    padding: 15px;
+    width: 350px;
+    margin-top: 40px;
+}
