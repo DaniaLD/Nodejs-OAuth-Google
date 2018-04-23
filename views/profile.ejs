@@ -6,7 +6,7 @@
         </a>
         <% if(!user) { %>
         <a href="/auth/login">
-            <button class="btn btn-outline-primary active">Log in</button>
+            <button class="btn btn-outline-primary">Log in</button>
         </a>
         <% } %>
         <% if(user) { %>
@@ -14,17 +14,13 @@
             <button class="btn btn-outline-primary">Log out</button>
         </a>
         <a href="/profile">
-            <button class="btn btn-outline-primary">Profile</button>
+            <button class="btn btn-outline-primary active">Profile</button>
         </a>        
         <% } %>
     </nav>
-    <div class="row justify-content-center login-header">
-        <h4>Please use your Gmail account to log in</h4>
+    <div class="row justify-content-center home-header">
+        <h3 class="col-lg-6" style="text-align: center;">Welcome to your profile, <%= user.username %></h3>
     </div>
-    <div class="row justify-content-center">
-        <a href="/auth/google">
-            <button class="btn btn-danger google-button">Google</button>
-        </a>
-    </div>
+    <hr>
 </div>
 <% include ./partials/html-bottom.ejs %>

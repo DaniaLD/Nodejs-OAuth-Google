@@ -4,12 +4,19 @@
         <a href="/">
             <button class="btn btn-outline-primary active">Home</button>
         </a>
-        <a href="#">
-            <button class="btn btn-outline-primary">Sign up</button>
-        </a>
+        <% if(!user) { %>
         <a href="/auth/login">
             <button class="btn btn-outline-primary">Log in</button>
         </a>
+        <% } %>
+        <% if(user) { %>
+        <a href="/auth/logout">
+            <button class="btn btn-outline-primary">Log out</button>
+        </a>
+        <a href="/profile">
+            <button class="btn btn-outline-primary">Profile</button>
+        </a>        
+        <% } %>
     </nav>
     <div class="row justify-content-center home-header">
         <h3 class="col-lg-6" style="text-align: center;">Welcome to my OAuth project</h3>
